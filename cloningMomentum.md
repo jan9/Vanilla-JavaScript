@@ -1,10 +1,12 @@
-# Momentum Clone
+# Google Web Application - Momentum Cloning
 ## March 2019
-### I am currently making a clone of Momentum (a google web application) to practice JavaScript.
+### This is a clone of Momentum (a google web application) I made to practice JavaScript.
 
-### Here are what I have done and what still needs to be done:
-* clock (check!)
-* user's name
-* to do list
-* temperature
-* location
+### This web application has following features:
+* 24 hour clock
+* Add and recall a user's name (localStorage API)
+* Simple to do list (localStorage API)
+* User's current location (openweathermap API)
+* User's current temperature (openweathermap API)
+
+### Thanks to Nomad Coders tutorial "초보자를 위한 바닐라 JavaScript" and images from http://unsplash.com

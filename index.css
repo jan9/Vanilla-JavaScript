@@ -1,6 +1,19 @@
-
 body {
+  color: black;
+  font-family: 'Roboto Slab', serif;
+}
 
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff0000;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: #ff0000;
+  color: white;
 }
 
 .clicked {
@@ -14,4 +27,90 @@ body {
 
 .showing {
   display: block;
+}
+
+#keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+  opacity: 0.8
+}
+
+.js-weather {
+  position: absolute;
+  top: 5px;
+  right: 18px;
+  font-size: 20px;
+}
+
+.js-clock {
+  font-size:70px;
+  text-align: center;
+}
+
+input[type=text] {
+  text-align: center;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+
+.js-form input {
+  position: fixed;
+  left: 25%;
+  top: 13em;
+  width: 50%;
+  opacity: 0.7;
+}
+
+.js-todoForm input {
+  position: fixed;
+  left: 25%;
+  top: 17em;
+  width: 50%;
+  opacity: 0.7;
+}
+
+
+.js-greetings {
+  position: fixed;
+  left: 25%;
+  top: 5.5em;
+  text-align: center;
+  font-size: 40px;
+  width: 50%;
+}
+
+.js-todoList {
+  position: fixed;
+  left: 25%;
+  top: 19.5em;
+  font-size: 20px;
+  width: 50%;
+}
+
+li {
+  list-style:none;
+}
+
+.js-todoList span {
+  padding: 20px;
 }

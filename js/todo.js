@@ -44,8 +44,13 @@ function printToDo(text) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  const currentValue = toDoInput.value;
-  printToDo(currentValue);
+  if (localStorage.toDos == null || JSON.parse(localStorage.toDos).length < 11) {
+    const currentValue = toDoInput.value;
+    printToDo(currentValue);
+  }
+  else {
+    alert("There are so many things you haven't done yet! Finish these first!!");
+  }
 }
 
 function loadToDos() {
